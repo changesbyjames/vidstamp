@@ -86,6 +86,17 @@ function App() {
         We're also not limited to what's currently being encoded. Currently it supports encoding what the main cam is
         but if we wanted to store more information it's easy to do.
       </p>
+      <p>
+        You can see the code here:{' '}
+        <a href="https://github.com/changesbyjames/vidstamp">https://github.com/changesbyjames/vidstamp</a>
+      </p>
+      <p>
+        You can get other clips (with other sizes) here:{' '}
+        <a href="https://www.twitch.tv/strangecyan/videos?filter=clips&range=all">
+          https://www.twitch.tv/strangecyan/videos?filter=clips&range=all
+        </a>{' '}
+        <span style={{ fontSize: 10 }}>Please note: 2px does not work, it's just too small.</span>
+      </p>
       <p style={{ fontSize: 10 }}>Click submit!</p>
       <input style={{ width: '100%' }} type="text" value={clip} onChange={e => setClip(e.target.value)} />
       <button onClick={onSubmit}>Submit</button>
